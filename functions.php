@@ -4,20 +4,19 @@ $username = "root";
 $password = "root";
 $dbname = "test";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error)
-{
-    die("Connection failed: " . $conn->connect_error);
-}
 
-install_to_complain($conn);
+
 
 
 function install_to_complain($conn)
 {
+  $conn = new mysqli($servername, $username, $password, $dbname);
+  if ($conn->connect_error)
+  {
+      die("Connection failed: " . $conn->connect_error);
+  }
 
+  //
   $sql = "SELECT SalesRep, Technician, SaleDate, DateOpened FROM AmpService LIMIT 1";
   $result = $conn->query($sql);
   if ($result->num_rows > 0)
@@ -30,21 +29,26 @@ function install_to_complain($conn)
         $date_opened = $row['DateOpened'];
 
         echo "$sales_rep $technician $sale_date $date_opened ";
+
+        // modify output
+        $temp_sd = explode(" ", $sale_date);
+        $temp_do = explode(" ", $date_opened);
+        $temp_sd_2 = explode("/", $temp_sd[0]);
+        $temp_do_2 = explode("/", $temp_do[0]);
+
+        var_dump($temp_sd_2);
+        var_dump($temp_do_2);
+
     }
   }
+  //
   else
   {
       echo "0 results";
   }
 
+  $conn->close();
+
 }
 
-
-$conn->close();
-
-
-
-
-
-
-$conn->close();
+install_to_complain();
