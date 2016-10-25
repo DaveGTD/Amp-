@@ -1,7 +1,7 @@
 <?php
 
 
-function install_to_complain($conn)
+function install_to_complain()
 {
   $servername = "localhost";
   $username = "root";
@@ -17,7 +17,7 @@ function install_to_complain($conn)
   //
   $sql = "SELECT SalesRep, Technician, CustomerName, SaleDate, DateOpened FROM AmpService LIMIT 1";
   $result = $conn->query($sql);
-  $numResults = mysql_num_rows($result);
+  $numResults = $result->num_rows;
   $counter = 0;
   echo $numResults . "\n";
 
