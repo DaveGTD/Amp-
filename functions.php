@@ -19,7 +19,6 @@ function install_to_complain()
   $result = $conn->query($sql);
   $numResults = $result->num_rows;
   $counter = 0;
-  echo $numResults . "\n";
 
   if ($result->num_rows > 0)
   {
@@ -31,7 +30,7 @@ function install_to_complain()
         $date_opened = $row['DateOpened'];
         $customer_name = $row['CustomerName'];
 
-        echo "$sales_rep $technician $customer_name $sale_date $date_opened \n ";
+        // echo "$sales_rep $technician $customer_name $sale_date $date_opened \n ";
 
         // modify output
         $temp_sd = explode(" ", $sale_date);
