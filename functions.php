@@ -18,7 +18,7 @@ function install_to_complain($conn)
   $sql = "SELECT SalesRep, Technician, CustomerName, SaleDate, DateOpened FROM AmpService LIMIT 1";
   $result = $conn->query($sql);
   $numResults = mysql_num_rows($result);
-  $counter = 0
+  $counter = 0;
 
   if ($result->num_rows > 0)
   {
