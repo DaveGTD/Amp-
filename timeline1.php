@@ -82,6 +82,6 @@ function install_to_complain()
     </script>
   </head>
   <body>
-    <div id="timeline" style="height: 180px;"></div>
+    <div id="timeline" style="height: 2000px;"></div>
   </body>
 </html>
