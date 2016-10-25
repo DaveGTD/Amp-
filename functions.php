@@ -1,15 +1,13 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "root";
-$dbname = "test";
-
-
-
 
 
 function install_to_complain($conn)
 {
+  $servername = "localhost";
+  $username = "root";
+  $password = "root";
+  $dbname = "test";
+
   $conn = new mysqli($servername, $username, $password, $dbname);
   if ($conn->connect_error)
   {
