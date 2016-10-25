@@ -47,7 +47,7 @@ function install_to_complain($conn)
       echo "0 results";
   }
 
-  // $conn->close();
+ $conn->close();
 
 }
 
