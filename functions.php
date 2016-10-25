@@ -12,7 +12,7 @@ if ($conn->connect_error)
     die("Connection failed: " . $conn->connect_error);
 }
 
-
+install_to_complain($conn);
 
 
 function install_to_complain($conn)
@@ -29,7 +29,7 @@ function install_to_complain($conn)
         $sale_date = $row['SaleDate'];
         $date_opened = $row['DateOpened'];
 
-        echo "$sales_rep $technician $sale_date $date_opened "; 
+        echo "$sales_rep $technician $sale_date $date_opened ";
     }
   }
   else
@@ -40,7 +40,7 @@ function install_to_complain($conn)
 }
 
 
-
+$conn->close();
 
 
 
