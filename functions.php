@@ -19,6 +19,7 @@ function install_to_complain($conn)
   $result = $conn->query($sql);
   $numResults = mysql_num_rows($result);
   $counter = 0;
+  echo $numResults . "\n";
 
   if ($result->num_rows > 0)
   {
