@@ -79,9 +79,11 @@ function install_to_complain()
         dataTable.addColumn({ type: 'date', id: 'End' });
         dataTable.addRows([ <?php install_to_complain() ?> ]);
 
+
         var options = {
-          backgroundColor = 'yellow'
-        };
+                timeline: { showRowLabels: false },
+                avoidOverlappingGridLines: true
+              };
 
         chart.draw(dataTable, options);
       }
