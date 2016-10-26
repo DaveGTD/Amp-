@@ -99,7 +99,8 @@ function install_to_complain()
 
     <style>
     #data {
-      backgroud-color: yellow;
+      background: #42d7f4;
+      font-family: monaco;
     }
     </style>
 
