@@ -13,7 +13,7 @@ function install_to_complain()
   }
 
   //
-  $sql = "SELECT SalesRep, Technician, CustomerName, SaleDate, DateOpened FROM AmpService LIMIT 15;
+  $sql = "SELECT SalesRep, Technician, CustomerName, SaleDate, DateOpened FROM AmpService LIMIT 15";
   $result = $conn->query($sql);
   $numResults = $result->num_rows;
   $counter = 0;
@@ -80,7 +80,7 @@ function install_to_complain()
         dataTable.addRows([ <?php install_to_complain() ?> ]);
 
         var options = {
-
+          backgroundColor = 'yellow'
         };
 
         chart.draw(dataTable, options);
