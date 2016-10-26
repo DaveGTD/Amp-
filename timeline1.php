@@ -103,7 +103,7 @@ function install_to_complain()
       }
     </script>
     <style>
-    .data{
+    #data{
       backgroud-color:#33ccff;
     }
     </style>
