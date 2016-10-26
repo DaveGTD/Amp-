@@ -80,7 +80,7 @@ function install_to_complain()
         dataTable.addRows([ <?php install_to_complain() ?> ]);
 
         var options = {
-          backgroundColor = 'yellow'
+
         };
 
         chart.draw(dataTable, options);
