@@ -5,13 +5,7 @@
 // 2. Skybell
 // 3. Camera sensor
 
-function display_data()
-{
-  echo "<strong> <h3> Top 3 issues leading to early service request </h3> </strong> <br>";
-  echo " 1. System Pull <br>";
-  echo " 2. Skybell <br>";
-  echo " 3. Camera sensor <br>";
-}
+
 
 function install_to_complain()
 {
@@ -102,6 +96,7 @@ function install_to_complain()
         chart.draw(dataTable, options);
       }
     </script>
+
     <style>
     #data {
       backgroud-color: yellow;
@@ -111,7 +106,13 @@ function install_to_complain()
   </head>
   <body>
     <div id="data">
-      <?php display_data() ?>
+      <h3> TOP 3 : Issues for early sevice request </h3>
+      <br>
+      1. System pull
+      <br>
+      2. Skybell
+      <br>
+      3. Camera sensor
     </div>
 
     <br>
