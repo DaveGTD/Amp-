@@ -13,7 +13,7 @@ function install_to_complain()
   }
 
   //
-  $sql = "SELECT SalesRep, Technician, CustomerName, SaleDate, DateOpened FROM AmpService LIMIT 15";
+  $sql = "SELECT SalesRep, Technician, CustomerName, SaleDate, DateOpened FROM AmpService GROUP BY Technician LIMIT 15";
   $result = $conn->query($sql);
   $numResults = $result->num_rows;
   $counter = 0;
@@ -81,7 +81,7 @@ function install_to_complain()
 
 
         var options = {
-                timeline: { showRowLabels: false },
+                timeline: { showRowLabels: true },
                 avoidOverlappingGridLines: true
               };
 
