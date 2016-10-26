@@ -103,16 +103,18 @@ function install_to_complain()
       }
     </script>
     <style>
-    #data{
-      backgroud-color:#33ccff;
+    #data {
+      backgroud-color: yellow;
     }
     </style>
+
   </head>
   <body>
     <div id="data">
       <?php display_data() ?>
     </div>
-    <br><br>
+
+    <br>
     <div id="timeline" style="height: 2000px;"></div>
   </body>
 </html>
