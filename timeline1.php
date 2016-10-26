@@ -40,12 +40,12 @@ function install_to_complain()
         if (++$counter == $numResults)
         {
           // last row
-          echo "[ '$customer_name' , new Date($sd[2], $sd[0], $sd[1]) , new Date($do[2], $do[0], $do[1]) ]";
+          echo "[ '$customer_name' , '$sales_rep', new Date($sd[2], $sd[0], $sd[1]) , new Date($do[2], $do[0], $do[1]) ]";
         }
         else
         {
           // not last row
-          echo "[ '$customer_name' , new Date($sd[2], $sd[0], $sd[1]) , new Date($do[2], $do[0], $do[1]) ], ";
+          echo "[ '$customer_name' , '$sales_rep', new Date($sd[2], $sd[0], $sd[1]) , new Date($do[2], $do[0], $do[1]) ], ";
         }
 
     }
@@ -72,7 +72,8 @@ function install_to_complain()
         var chart = new google.visualization.Timeline(container);
         var dataTable = new google.visualization.DataTable();
 
-        dataTable.addColumn({ type: 'string', id: 'President' });
+        dataTable.addColumn({ type: 'string', id: 'Customer' });
+        dataTable.addColumn({ type: 'string', id: 'SalesRep' });
         dataTable.addColumn({ type: 'date', id: 'Start' });
         dataTable.addColumn({ type: 'date', id: 'End' });
         dataTable.addRows([ <?php install_to_complain() ?> ]);
