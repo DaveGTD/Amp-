@@ -13,7 +13,7 @@ function install_to_complain()
   }
 
   //
-  $sql = "SELECT SalesRep, Technician, CustomerName, SaleDate, DateOpened FROM AmpService GROUP BY Technician LIMIT 15";
+  $sql = "SELECT SalesRep, Technician, CustomerName, SaleDate, DateOpened FROM AmpService GROUP BY Technician";
   $result = $conn->query($sql);
   $numResults = $result->num_rows;
   $counter = 0;
