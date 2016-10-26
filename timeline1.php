@@ -1,4 +1,18 @@
 <?php
+
+// top 3 issues leading to early complain:
+// 1. System pull
+// 2. Skybell
+// 3. Camera sensor
+
+fucntion display_data()
+{
+  echo "<strong> <h3> Top 3 issues leading to early service request </h3> </strong> <br>";
+  echo " 1. System Pull <br>";
+  echo " 2. Skybell <br>";
+  echo " 3. Camera sensor <br>";
+}
+
 function install_to_complain()
 {
   $servername = "localhost";
@@ -90,6 +104,10 @@ function install_to_complain()
     </script>
   </head>
   <body>
+    <div id="data" style="color:#33ccff">
+      <?php display_data() ?>
+    </div>
+    <br><br>
     <div id="timeline" style="height: 2000px;"></div>
   </body>
 </html>
