@@ -5,10 +5,10 @@
 </head>
 
 <body>
-<script src="jquery-1.12.3.js"></script>
-<script src="jquery.dataTables.min.js"></script>
+<script src="resources/jquery-1.12.3.js"></script>
+<script src="resources/jquery.dataTables.min.js"></script>
 
-<link rel="stylesheet" href="jquery.dataTables.min.css">
+<link rel="stylesheet" href="resources/jquery.dataTables.min.css">
 
 <script>
 
