@@ -5,7 +5,7 @@
 // 2. Skybell
 // 3. Camera sensor
 
-fucntion display_data()
+function display_data()
 {
   echo "<strong> <h3> Top 3 issues leading to early service request </h3> </strong> <br>";
   echo " 1. System Pull <br>";
