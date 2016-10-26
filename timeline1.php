@@ -102,9 +102,14 @@ function install_to_complain()
         chart.draw(dataTable, options);
       }
     </script>
+    <style>
+    .data{
+      backgroud-color:#33ccff;
+    }
+    </style>
   </head>
   <body>
-    <div id="data" style="backgroud-color:#33ccff font-family:"Monaco";">
+    <div id="data">
       <?php display_data() ?>
     </div>
     <br><br>
