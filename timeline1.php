@@ -104,7 +104,7 @@ function install_to_complain()
     </script>
   </head>
   <body>
-    <div id="data" style="backgroud-color:#33ccff; font-family:"Monaco";">
+    <div id="data" style="backgroud-color:#33ccff font-family:"Monaco";">
       <?php display_data() ?>
     </div>
     <br><br>
