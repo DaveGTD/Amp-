@@ -35,13 +35,13 @@ if ($conn->connect_error)
 }
 
 //
-$sql = "SELECT SalesRep, Technician, CustomerName, SaleDate, DateOpened FROM AmpService GROUP BY Technician";
+$sql = "SELECT SalesRep, Technician, CustomerName, SaleDate, DateOpened, FirstNote FROM AmpService GROUP BY SalesRep";
 $result = $conn->query($sql);
 $numResults = $result->num_rows;
 $counter = 0;
 
 // add header
-echo "<thead><tr> <th>Sales Rep</th> <th>Technician</th> <th>Sale Date</th> <th>Date Opened</th> <th>Customer Name</th> <th>First Note</th> </tr></thead>";
+echo "<thead><tr> <th>Sales Rep</th> <th>Technician</th> <th>Days from Setup</th> <th>Sale Date</th> <th>Date Opened</th> <th>Customer Name</th> <th>First Note</th> </tr></thead>";
 echo "<tbody>";
 
 if ($result->num_rows > 0)
@@ -55,8 +55,18 @@ if ($result->num_rows > 0)
       $customer_name = $row['CustomerName'];
       $first_note = $row['FirstNote'];
 
+      // modify output
+      $temp_sd = explode(" ", $sale_date);
+      $temp_do = explode(" ", $date_opened);
+      $sd = explode("/", $temp_sd[0]);
+      $do = explode("/", $temp_do[0]);
+
+      $date1 = new DateTime("$sd[2]-$sd[0]-$sd[1]");
+      $date2 = new DateTime("$do[2]-$do[0]-$do[1]");
+      $diff = $date2->diff($date1)->format("%a");
+
       echo "<tr>";
-      echo "<td>$sales_rep</td> <td>$technician</td> <td>$sale_date</td> <td>$date_opened</td> <td>$customer_name</td> <td>$first_note</td>";
+      echo "<td>$sales_rep</td> <td>$technician</td> <td>$diff</td> <td>$sale_date</td> <td>$date_opened</td> <td>$customer_name</td> <td>$first_note</td>";
       echo "</tr>";
 
 
