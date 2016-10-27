@@ -35,6 +35,7 @@ function new_equipment_cost()
 
 
 
+
         if (++$counter == $numResults)
         {
           // last row
