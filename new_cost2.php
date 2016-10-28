@@ -15,7 +15,7 @@
       labels: [1, 2, 3, 4, 5, 6, 7]
     }, {
       donut: true,
-      showLabel: false
+      showLabel: true
     });
 
     chart.on('draw', function(data) {
