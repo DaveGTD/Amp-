@@ -11,7 +11,7 @@
           ['Keyfob',   330   ],
           ['Camera IP',  985],
           ['Motion Sensors', 440],
-          ['Other',    285]
+          ['Others',    285]
         ]);
 
         var options = {
