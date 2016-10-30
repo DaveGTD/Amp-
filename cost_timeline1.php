@@ -20,11 +20,11 @@
       ]);
 
     var options = {
-      title : 'Monthly Coffee Production by Country',
-      vAxis: {title: 'Cups'},
+      title : 'Service Cases By Type/Period',
+      vAxis: {title: 'Service Requests'},
       hAxis: {title: 'Month'},
       seriesType: 'bars',
-      series: {5: {type: 'line'}}
+      series: {4: {type: 'line'}}
     };
 
     var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
