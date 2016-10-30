@@ -24,7 +24,7 @@
       vAxis: {title: 'Service Requests'},
       hAxis: {title: 'Month'},
       seriesType: 'bars',
-      series: {4: {type: 'line'}}
+      series: {3: {type: 'line'}}
     };
 
     var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
