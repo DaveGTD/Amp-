@@ -80,10 +80,9 @@ function days_open_and_cost()
       ]);
 
       var options = {
-        title: 'Correlation between life expectancy, fertility rate ' +
-               'and population of some world countries (2010)',
-        hAxis: {title: 'Life Expectancy'},
-        vAxis: {title: 'Fertility Rate'},
+        title: 'Technician Service Expense: Total Days & Total Cost',
+        hAxis: {title: 'New Equipment Total Cost'},
+        vAxis: {title: 'Total Service Time'},
         bubble: {textStyle: {fontSize: 11}}
       };
 
