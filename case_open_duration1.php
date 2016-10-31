@@ -93,6 +93,6 @@ function days_open_and_cost()
     </script>
   </head>
   <body>
-    <div id="series_chart_div" style="width: 900px; height: 500px;"></div>
+    <div id="series_chart_div" style="width: 1400px; height: 1000px;"></div>
   </body>
 </html>
