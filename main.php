@@ -37,7 +37,7 @@
                 top: 18px;
             }
             .content {
-                text-align: justify;
+                text-align: center;
             }
             .title {
                 font-size: 84px;
@@ -77,10 +77,14 @@
 
                 <div class="links">
                     <a href="timeline1.php"> Early Service Requests</a> <br>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="sales_complain_table.php">Service Requests Table</a> <br>
+                    <a href="case_open_duration1.php"> Service Tech Expense</a> <br>
+                    <a href="case_open_table.php"> Service Tech Expense Table</a> <br>
+                    <a href="cost_timeline1.php"> Service Cost By Time + Period </a> <br>
+                    <a href="map2.php"> Map: Hot Areas</a> <br>
+                    <a href="new_cost3.php"> New Equipment Cost</a> <br>
+
+
                 </div>
             </div>
         </div>
