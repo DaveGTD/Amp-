@@ -32,23 +32,24 @@ function days_open_and_cost()
     {
         $sales_rep = $row['SalesRep'];
         $technician = $row['Technician'];
-        $days_open = $row['DaysOpen'];
+        $days_open = (int)$row['DaysOpen'];
         $date_opened = $row['DateOpened'];
         $customer_name = $row['CustomerName'];
         $case_reason = $row['CaseReason'];
-        $new_equipment_total_cost = $row['NewEquipmentTotalCost'];
+        $new_equipment_total_cost = (int)$row['NewEquipmentTotalCost'];
 
+        $service_expense = $days_open * $new_equipment_total_cost;
 
 
         if (++$counter == $numResults)
         {
           // last row
-          echo "[ '$technician' , $days_open, $new_equipment_total_cost, '$sales_rep', '$case_reason', '$date_opened', '$customer_name' ]";
+          echo "[ '$technician' , $days_open, $new_equipment_total_cost, '$sales_rep', $service_expense, '$case_reason', '$date_opened', '$customer_name' ]";
         }
         else
         {
           // not last row
-          echo "[ '$technician' , $days_open, $new_equipment_total_cost, '$sales_rep', '$case_reason', '$date_opened', '$customer_name' ],";
+          echo "[ '$technician' , $days_open, $new_equipment_total_cost, '$sales_rep', $service_expense, '$case_reason', '$date_opened', '$customer_name' ],";
         }
 
     }
@@ -74,7 +75,7 @@ function days_open_and_cost()
     function drawSeriesChart() {
 
       var data = google.visualization.arrayToDataTable([
-        ['Technician', 'DaysOpen', 'Total Cost', 'SalesRep', 'Case Reason', 'Date Opened', 'Customer Name' ],
+        ['Technician', 'DaysOpen', 'Total Cost', 'SalesRep', 'Service Expense', 'Case Reason', 'Date Opened', 'Customer Name' ],
         <?php days_open_and_cost(); ?>
       ]);
 
