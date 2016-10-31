@@ -61,7 +61,7 @@
 
                 <div class="top-right links">
 
-                        <a href="#">REPORTS</a>
+                        <a href="#"> AMP_REPORTS</a>
 
                         <a href="#"> support@termx.co </a>
                         <a href="#"> 801-456-7890</a>
@@ -76,7 +76,7 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a> <br>
+                    <a href="timeline1.php"> Early Service Requests</a> <br>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://forge.laravel.com">Forge</a>
