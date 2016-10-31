@@ -37,7 +37,7 @@
                 top: 18px;
             }
             .content {
-                text-align: center;
+                text-align: justify;
             }
             .title {
                 font-size: 84px;
