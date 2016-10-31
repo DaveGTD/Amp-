@@ -62,6 +62,7 @@ function days_open_and_cost()
  $conn->close();
 
 }
+?>
 
 <html>
   <head>
