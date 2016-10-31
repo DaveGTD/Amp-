@@ -20,7 +20,7 @@
       ]);
 
     var options = {
-      title : 'Service Cases By Type/Period',
+      title : 'Service Cases By Type & Period',
       vAxis: {title: 'Service Requests'},
       hAxis: {title: 'Month'},
       seriesType: 'bars',
