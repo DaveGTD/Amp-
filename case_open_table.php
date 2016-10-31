@@ -58,7 +58,7 @@ if ($result->num_rows > 0)
 
 
       echo "<tr>";
-      echo " <td>$technician</td> <td>$sales_rep</td> <td>$days_open/td> <td>$new_equipment_total_cost</td> <td>$date_opened</td> <td>$case_reason</td> <td>$customer_name</td> ";
+      echo " <td>$technician</td> <td>$sales_rep</td> <td>$days_open</td> <td>$new_equipment_total_cost</td> <td>$date_opened</td> <td>$case_reason</td> <td>$customer_name</td> ";
       echo "</tr>";
 
 
