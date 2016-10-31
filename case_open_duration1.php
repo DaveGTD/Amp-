@@ -81,8 +81,8 @@ function days_open_and_cost()
 
       var options = {
         title: 'Technician Service Expense: Total Days & Total Cost',
-        vAxis: {title: 'New Equipment Total Cost'},
-        hAxis: {title: 'Total Service Time'},
+        vAxis: {title: 'New Equipment Total Cost ($)'},
+        hAxis: {title: 'Total Service Time (Days)'},
         bubble: {textStyle: {fontSize: 11}}
       };
 
