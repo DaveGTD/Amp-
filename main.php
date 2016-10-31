@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>TermX</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -61,17 +61,18 @@
 
                 <div class="top-right links">
 
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="#">REPORTS</a>
 
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
+                        <a href="#"> support@termx.co </a>
+                        <a href="#"> 801-456-7890</a>
 
                 </div>
 
 
+
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    TermX
                 </div>
 
                 <div class="links">
