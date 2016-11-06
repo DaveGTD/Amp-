@@ -35,7 +35,7 @@ if ($conn->connect_error)
 }
 
 //
-$sql = $sql = "SELECT * FROM AmpService GROUP BY Customer";
+$sql = "SELECT * FROM AmpService GROUP BY Customer";
 $result = $conn->query($sql);
 $numResults = $result->num_rows;
 $counter = 0;
