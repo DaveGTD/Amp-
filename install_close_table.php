@@ -41,7 +41,7 @@ $numResults = $result->num_rows;
 $counter = 0;
 
 // add header
-echo "<thead><tr>  <th>Technician</th> <th>Sales Rep</th> <th>Days Open</th> <th>Total Cost</th> <th>Date Opened</th>  <th>Case Reason</th>  <th>Customer Name</th> </tr></thead>";
+echo "<thead><tr>  <th>Technician</th> <th>Sales Rep</th> <th>Days Open</th> <th>Total Cost</th> <th>Install Date</th> <th>Date Resolved</th>  <th>Case Reason</th>  <th>Customer Name</th> </tr></thead>";
 echo "<tbody>";
 
 if ($result->num_rows > 0)
@@ -55,10 +55,23 @@ if ($result->num_rows > 0)
       $customer_name = $row['CustomerName'];
       $case_reason = $row['CaseReason'];
       $new_equipment_total_cost = (int)$row['NewEquipmentTotalCost'];
+      $install_date = $row['InstallDate'];
+      $date_resolved = $row['DateResolved'];
+
+
+      // modify output
+      $temp_sd = explode(" ", $install_date);
+      $temp_do = explode(" ", $date_resolved);
+      $sd = explode("/", $temp_sd[0]);
+      $do = explode("/", $temp_do[0]);
+
+      $date1 = new DateTime("$sd[2]-$sd[0]-$sd[1]");
+      $date2 = new DateTime("$do[2]-$do[0]-$do[1]");
+      $diff = $date2->diff($date1)->format("%a");
 
 
       echo "<tr>";
-      echo " <td>$technician</td> <td>$sales_rep</td> <td>$days_open</td> <td>$new_equipment_total_cost</td> <td>$date_opened</td> <td>$case_reason</td> <td>$customer_name</td> ";
+      echo " <td>$technician</td> <td>$sales_rep</td> <td>$days_open</td> <td>$new_equipment_total_cost</td> <td>$install_date</td> <td>$date_resolved</td> <td>$case_reason</td> <td>$customer_name</td> ";
       echo "</tr>";
 
 
