@@ -41,7 +41,7 @@ $numResults = $result->num_rows;
 $counter = 0;
 
 // add header
-echo "<thead><tr>  <th>Technician</th> <th>Sales Rep</th> <th>ID-DR</th> <th>Days Open</th> <th>Total Cost</th> <th>Install Date</th> <th>Date Opened</th> <th>Date Resolved</th>  <th>Case Reason</th>  <th>Customer Name</th> </tr></thead>";
+echo "<thead><tr> <th>Customer Name</th>  <th>ID-DR</th> <th>ID-DO</th> <th>DO-DR</th> <th>Total Cost</th>  <th>Case Reason</th>  <th>First Note</th> </tr></thead>";
 echo "<tbody>";
 
 if ($result->num_rows > 0)
@@ -58,6 +58,7 @@ if ($result->num_rows > 0)
       $install_date = $row['InstallDate'];
       $date_resolved = $row['DateResolved'];
       $account_status = $row['AccountStatus'];
+      $first_note = $row['FirstNote'];
 
 
       // modify output
@@ -70,9 +71,18 @@ if ($result->num_rows > 0)
       $date2 = new DateTime("$do[2]-$do[0]-$do[1]");
       $diff = $date2->diff($date1)->format("%a");
 
+      $temp_sd2 = explode(" ", $sale_date);
+      $temp_do2 = explode(" ", $date_opened);
+      $sd2 = explode("/", $temp_sd2[0]);
+      $do2 = explode("/", $temp_do2[0]);
+
+      $date12 = new DateTime("$sd2[2]-$sd2[0]-$sd2[1]");
+      $date22 = new DateTime("$do2[2]-$do2[0]-$do2[1]");
+      $diff2 = $date22->diff($date12)->format("%a");
+
 
       echo "<tr>";
-      echo " <td>$technician</td> <td>$sales_rep</td> <td>$diff</td> <td>$days_open</td> <td>$new_equipment_total_cost</td> <td>$install_date</td> <td>$date_resolved</td> <td>$date_resolved</td> <td>$case_reason</td> <td>$customer_name</td> ";
+      echo " <td>$customer_name</td> <td>$diff</td> <td>$diff2</td> <td>$days_open</td> <td>$new_equipment_total_cost</td> <td>$case_reason</td> <td>$first_note</td> ";
       echo "</tr>";
 
 
