@@ -81,7 +81,7 @@ function install_close()
   }
 
   //
-  $sql = "SELECT SalesRep, Technician, CustomerName, DateOpened, DaysOpen, CaseReason, NewEquipmentTotalCost FROM AmpService WHERE NewEquipmentTotalCost IS NOT NULL GROUP BY Technician";
+  $sql = "SELECT * FROM AmpService WHERE NewEquipmentTotalCost IS NOT NULL GROUP BY Technician";
   $result = $conn->query($sql);
   $numResults = $result->num_rows;
   $counter = 0;
