@@ -61,6 +61,7 @@ if ($result->num_rows > 0)
       $first_note = $row['FirstNote'];
 
 
+
       // modify output
       $temp_sd = explode(" ", $install_date);
       $temp_do = explode(" ", $date_resolved);
@@ -71,7 +72,7 @@ if ($result->num_rows > 0)
       $date2 = new DateTime("$do[2]-$do[0]-$do[1]");
       $diff = $date2->diff($date1)->format("%a");
 
-      $temp_sd2 = explode(" ", $sale_date);
+      $temp_sd2 = explode(" ", $install_date);
       $temp_do2 = explode(" ", $date_opened);
       $sd2 = explode("/", $temp_sd2[0]);
       $do2 = explode("/", $temp_do2[0]);
