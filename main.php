@@ -82,7 +82,7 @@
                     <a href="timeline3.php"> Install-Close by Case Reason timeline</a><br>
                     <a href="cost_case_reason.php"> Cost by Reason</a><br>
                     <a href="install_thru_close_days.php"> Avg Days by Case</a><br>
-                    <a href="cost_case_reason.php"> </a> Avg Cost by Case <br>
+                    <a href="cost_case_reason.php">  Avg Cost by Case</a> <br>
                     <a href="heat_map_cost_1.php"> Sample Heat Map </a><br>
                     <a href="timeline1.php"> Early Service Requests</a> <br>
                     <a href="sales_complain_table.php">Service Requests Table</a> <br>
