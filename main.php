@@ -80,7 +80,6 @@
                     <a href="install_close_table2.php"> Install-Open-Close Table </a><br>
                     <a href="timeline2.php"> Install-Close timeline</a><br>
                     <a href="timeline3.php"> Install-Close by Case Reason timeline</a><br>
-                    <a href="cost_case_reason.php"> Cost by Reason</a><br>
                     <a href="install_thru_close_days.php"> Avg Days by Case</a><br>
                     <a href="cost_case_reason.php">  Avg Cost by Case</a> <br>
                     <a href="heat_map_cost_1.php"> Sample Heat Map </a><br>
