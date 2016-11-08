@@ -41,7 +41,7 @@ $numResults = $result->num_rows;
 $counter = 0;
 
 // add header
-echo "<thead><tr> <th>Customer Name</th>  <th>ID-DR</th> <th>ID-DO</th> <th>DO-DR</th> <th>Total Cost</th>  <th>Case Reason</th>  <th>First Note</th> </tr></thead>";
+echo "<thead><tr> <th>Customer Name</th> <th>Account Status</th> <th>ID-DR</th> <th>ID-DO</th> <th>DO-DR</th> <th>Total Cost</th>  <th>Case Reason</th>  <th>First Note</th> </tr></thead>";
 echo "<tbody>";
 
 if ($result->num_rows > 0)
@@ -59,6 +59,7 @@ if ($result->num_rows > 0)
       $date_resolved = $row['DateResolved'];
       $account_status = $row['AccountStatus'];
       $first_note = $row['FirstNote'];
+
 
 
 
@@ -83,7 +84,7 @@ if ($result->num_rows > 0)
 
 
       echo "<tr>";
-      echo " <td>$customer_name</td> <td>$diff</td> <td>$diff2</td> <td>$days_open</td> <td>$new_equipment_total_cost</td> <td>$case_reason</td> <td>$first_note</td> ";
+      echo " <td>$customer_name</td> <td>$account_status</td> <td>$diff</td> <td>$diff2</td> <td>$days_open</td> <td>$new_equipment_total_cost</td> <td>$case_reason</td> <td>$first_note</td> ";
       echo "</tr>";
 
 
