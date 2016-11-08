@@ -110,7 +110,7 @@ function install_to_close()
   </head>
   <body>
     <div id="data">
-      <h3> Install thru Close </h3>
+      <h3> Install thru Close by Case </h3>
 
 
     <br>
