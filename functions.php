@@ -124,3 +124,5 @@ function install_close()
   }
 
 }
+
+install_close();
