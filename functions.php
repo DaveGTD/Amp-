@@ -114,7 +114,7 @@ function install_close()
         $date2 = new DateTime("$do[2]-$do[0]-$do[1]");
         $diff = $date2->diff($date1)->format("%a");
 
-        echo $date1 . " " . $date2 . "\n";
+        echo $diff; 
 
 
     }
