@@ -18,7 +18,7 @@
 
     var options = {
       title : 'From Install to Case Resolved',
-      vAxis: {title: 'Service Requests'},
+      vAxis: {title: 'Days Since Install + Number of cases'},
       hAxis: {title: 'Case Reasons'},
       seriesType: 'bars',
       series: {1: {type: 'line'}}
