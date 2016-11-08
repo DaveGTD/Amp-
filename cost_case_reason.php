@@ -10,10 +10,10 @@
         // Some raw data (not necessarily accurate)
         var data = google.visualization.arrayToDataTable([
          ['Case Reason', 'Avg New Equipment Cost', 'Count'],
-         ['Additional Equipment', 113, 11 ],
-         ['New Install', 125 , 2],
-         ['Pull System', 502 , 31],
-         ['System Trouble', 259, 7]
+         ['Additional Equipment', $113, 11 ],
+         ['New Install', $125 , 2],
+         ['Pull System', $502 , 31],
+         ['System Trouble', $259, 7]
       ]);
 
     var options = {
