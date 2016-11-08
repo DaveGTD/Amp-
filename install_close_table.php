@@ -41,7 +41,7 @@ $numResults = $result->num_rows;
 $counter = 0;
 
 // add header
-echo "<thead><tr>  <th>Technician</th> <th>Sales Rep</th> <th>ID-DR</th> <th>Total Cost</th> <th>Install Date</th> <th>Date Resolved</th>  <th>Case Reason</th>  <th>Customer Name</th> </tr></thead>";
+echo "<thead><tr>  <th>Technician</th> <th>Sales Rep</th> <th>ID-DR</th> <th>Days Open</th> <th>Total Cost</th> <th>Install Date</th> <th>Date Resolved</th>  <th>Case Reason</th>  <th>Customer Name</th> </tr></thead>";
 echo "<tbody>";
 
 if ($result->num_rows > 0)
@@ -71,7 +71,7 @@ if ($result->num_rows > 0)
 
 
       echo "<tr>";
-      echo " <td>$technician</td> <td>$sales_rep</td> <td>$diff</td> <td>$new_equipment_total_cost</td> <td>$install_date</td> <td>$date_resolved</td> <td>$case_reason</td> <td>$customer_name</td> ";
+      echo " <td>$technician</td> <td>$sales_rep</td> <td>$diff</td> <td>$days_open</td> <td>$new_equipment_total_cost</td> <td>$install_date</td> <td>$date_resolved</td> <td>$case_reason</td> <td>$customer_name</td> ";
       echo "</tr>";
 
 
