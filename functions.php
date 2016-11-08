@@ -101,6 +101,8 @@ function install_close()
         $install_date = $row['InstallDate'];
         $date_resolved = $row['DateResolved'];
 
+        echo $install_date . "\n";
+        echo $date_resolved. "\n";
 
         // modify output
         $temp_sd = explode(" ", $install_date);
