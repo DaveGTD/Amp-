@@ -21,7 +21,7 @@
       vAxis: {title: 'Service Requests'},
       hAxis: {title: 'Case Reasons'},
       seriesType: 'bars',
-      series: {2: {type: 'line'}}
+      series: {1: {type: 'line'}}
     };
 
     var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
