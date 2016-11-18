@@ -30,7 +30,7 @@
 
        var options = {
          fontName: 'Monaco',
-         title: "Sales Count",
+         title: "Revenue By Day",
          height: 350,
        };
 
