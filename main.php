@@ -90,6 +90,7 @@
                     <a href="cost_timeline1.php"> Service Cost By Time + Period </a> <br>
                     <a href="map2.php"> Map: Hot Areas</a> <br>
                     <a href="new_cost3.php"> New Equipment Cost</a> <br>
+                    <a href="calendar.php"> Sales Calendar</a> <br>
                     <a href="https://docs.google.com/document/d/1hFgQ0Fw0i2GL2h438Pj7H9uVcoKO4wOeYLMKOYW3R5Y/edit?usp=sharing"> Summary </a> <br>
 
 
